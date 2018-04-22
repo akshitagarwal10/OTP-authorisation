@@ -2,11 +2,11 @@ const express = require('express');
 const pg = require('pg');
 const router = express.Router();
 
-//"postgres://nqzxqzmuuxgxrv:3cd0338e69c90dbd19564ccc4a7a0cf418cc887cb16d7a40ae007bc4a76199ba@ec2-54-243-213-188.compute-1.amazonaws.com:5432/db4vmrs4s06roc"
+//"postgres://ytmmdocvowsidk:79a467327aed451e7ba72431c971b70a3151a7976f1d8aa8cc2b8f7c8dce9dde@ec2-23-23-142-5.compute-1.amazonaws.com:5432/d9ldmv57g2ogtm"
 //"postgres://postgres:akshit168@localhost:5432/postgres"
 
 var pool = new pg.Pool({
-	connectionString: "postgres://postgres:akshit168@localhost:5432/postgres"
+	connectionString: "postgres://ytmmdocvowsidk:79a467327aed451e7ba72431c971b70a3151a7976f1d8aa8cc2b8f7c8dce9dde@ec2-23-23-142-5.compute-1.amazonaws.com:5432/d9ldmv57g2ogtm"
 })
 
 router.post('/', function(req, res){

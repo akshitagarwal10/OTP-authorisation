@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-// const schema = require('./models/schema')
+const schema = require('./models/schema')
 const api = require('./routes/api')
 
 
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, './dist')));
 
 
-// app.use('/schema', schema);
+app.use('/schema', schema);
 app.use('/api', api);
 
 
