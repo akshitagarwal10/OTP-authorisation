@@ -27,7 +27,7 @@ router.get('/getAllReq', function(req, res){
 router.post('/raisereq', function(req, res){
 	console.log('got a post raisereq request');
 	console.log(req.body);
-	var a_mail = 'abhishek.lahiri86@gmail.com';
+	var a_mail = 'koolsunrise@gmail.com';
 	var a_mobile = 8989132237;
 	var otp = common.get_OTP();
 
