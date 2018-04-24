@@ -27,8 +27,8 @@ router.get('/getAllReq', function(req, res){
 router.post('/raisereq', function(req, res){
 	console.log('got a post raisereq request');
 	console.log(req.body);
-	var a_mail = 'koolsunrise@gmail.com';
-	var a_mobile = '7999601394';
+	var a_mail = 'abhishek.lahiri86@gmail.com';
+	var a_mobile = '9769990293';
 	var otp = common.get_OTP();
 
 	pool.connect((err, client, done) => {
