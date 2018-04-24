@@ -28,7 +28,7 @@ router.post('/raisereq', function(req, res){
 	console.log('got a post raisereq request');
 	console.log(req.body);
 	var a_mail = 'koolsunrise@gmail.com';
-	var a_mobile = 8989132237;
+	var a_mobile = '7999601394';
 	var otp = common.get_OTP();
 
 	pool.connect((err, client, done) => {
@@ -45,7 +45,7 @@ router.post('/raisereq', function(req, res){
 
 	// console.log(otp);
 	common.sendMail(otp, req.body.u_mail, a_mail);
-	// common.sendSMS(otp, data.u_mobile, a_mobile);
+	common.sendSMS(otp, req.body.u_mobile, a_mobile);
 	res.send('true');
 })
 
